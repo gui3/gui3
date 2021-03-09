@@ -29,31 +29,57 @@ and reflexions on the way to go.
 
 ### ideas of content
 
-- /home
+- /home\
+  intro text\
+  game of life display OR WAM synth\
+  photo of workspace\
+
+- /demos\
+  "here are ..."\
+  list of project presentations in cards,
+  from the best to worst.
+
+- /code
+
 - /about
-  - /me
-  - /this site
+
+  - /this site\
+    purpose (improving dev skills)\
+    technologies
+
+  - /me\
+    embedded api badges?\
+    presentation\
+
 
 
 
 ### ideas of framework
 
+#### frontend
+
 - Svelte
-  - **PROS:**
+  - PROS:
     - serverless
     - fast
     - sexy
-  - **CONS:**
+  - CONS:
     - serverless
     - module for routing
     - lack of maturity
 
 - React
-  - **PROS:**
+  - PROS:
     - can be serverless
     - valuable skill for jobs
     - mature
-  - **CONS:**
+  - CONS:
+
+#### host
+
+- github pages (static)
+- Heroku
+- Glitch (!unsafe)
 
 
 ### ideas of projects
@@ -67,11 +93,17 @@ and reflexions on the way to go.
   TODO: move from express+eta to express+react
   for the sake of learning
 
+- psychotest (node express + vanilla)
+
 - vst synth (c++/iPlug2)
+
+- embryonic projects to restart:\
+  - git2stats
+  - 
 
 ---
 ## DONE
 
-
+- tictactoe game
 - create ROADMAP
 - setup repository
