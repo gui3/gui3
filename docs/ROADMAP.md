@@ -6,25 +6,21 @@ and reflexions on the way to go.
 
 ## TODO
 
-1. settling on a framework
+- settling on a framework\
+  define what are the needs and what can best suit them
+  [->ideas related](#ideas-of-framework)
 
-define what are the needs and what can best suit them
-[->ideas related](#ideas-of-framework)
+  - decide whether **serverless** or **serverful**\
+    do I need to fetch/process data so much,
+    or would a static site be enough ?
 
-  - decide whether **serverless** or **serverful**
+2. list ideas of content\
+  general idea of content and structure for the site
+  [->ideas related](#ideas-of-content)
 
-  do I need to fetch/process data so much,
-  or would a static site be enough ?
-
-2. list ideas of content
-
-general idea of content and structure for the site
-[->ideas related](#ideas-of-content)
-
-3. prioritize projects for showcase
-
-I need to finish and publish projects 
-to show them on the website. Priority to little demos
+3. prioritize projects for showcase\
+  I need to finish and publish projects 
+  to show them on the website. Priority to little demos
 
 
 
