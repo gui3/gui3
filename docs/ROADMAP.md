@@ -3,7 +3,7 @@
 Here are the milestones of this project,
 and reflexions on the way to go.
 
-
+---
 ## TODO
 
 - settling on a framework\
@@ -14,16 +14,17 @@ and reflexions on the way to go.
     do I need to fetch/process data so much,
     or would a static site be enough ?
 
-2. list ideas of content\
+- list ideas of content\
   general idea of content and structure for the site
   [->ideas related](#ideas-of-content)
 
-3. prioritize projects for showcase\
+- prioritize projects for showcase\
   I need to finish and publish projects 
   to show them on the website. Priority to little demos
+  [->ideas related](#ideas-of-projects)
 
 
-
+---
 ## IDEAS
 
 ### ideas of content
@@ -55,4 +56,22 @@ and reflexions on the way to go.
   - **CONS:**
 
 
+### ideas of projects
+
+- javascript minigames:
+  - tictactoe ->done\
+  - unidimentional game of life
+  - conway game of life (if unidimentional went well)
+
+- website anicode\
+  TODO: move from express+eta to express+react
+  for the sake of learning
+
+- vst synth (c++/iPlug2)
+
+---
 ## DONE
+
+
+- create ROADMAP
+- setup repository
