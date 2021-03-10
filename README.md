@@ -1,12 +1,11 @@
 # Hi !
 
-I am an amateur developper and musician/producer.
+I am an french amateur developper and musician/producer.
 
-Along with this README
-(will come) the sources of my new personal website,
-which you can visit for further information
-and much funny games,
+To know more, you can visit my personal homepage
 at [**gui3.fr** (! not yet https)](https://gui3.fr)
+
+---
 
 ## gui3.fr
 

@@ -30,9 +30,10 @@ and reflexions on the way to go.
 ### ideas of content
 
 - /home\
+  interesting quote?\
   intro text\
-  game of life display OR WAM synth\
-  photo of workspace\
+  game of life display OR WAM synth?\
+  photo of workspace?\
 
 - /demos\
   "here are ..."\
@@ -43,11 +44,11 @@ and reflexions on the way to go.
 
 - /about
 
-  - /this site\
+  - <>this site\
     purpose (improving dev skills)\
     technologies
 
-  - /me\
+  - <>me\
     embedded api badges?\
     presentation\
 
