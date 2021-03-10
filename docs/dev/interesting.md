@@ -31,3 +31,7 @@ https://www.npmjs.com/package/node-cache
 ## apis
 
 see [dedicated md file](./about-apis.md)
+
+## forums/chats
+
+see [dedicated md file](./about-forums.md)

@@ -1,6 +1,6 @@
 # Hi !
 
-I am an french amateur developper and musician/producer.
+I am an french amateur 💻developper and 🎶musician/producer.
 
 To know more, you can visit my personal homepage
 at [**gui3.fr** (! not yet https)](https://gui3.fr)
