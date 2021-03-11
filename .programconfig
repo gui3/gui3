@@ -1,0 +1,33 @@
+#!dotprogram
+
+scripts:
+  - topages:
+    arguments:
+      - path: folder to send to github pages
+    description: |
+      commits the contents of the specified folder 
+      (./public/ in this repo)
+      to the gh-pages branch on github
+    process:
+      - js: |
+        if (arguments.length !== 1) {
+          throw new Error("you must provide a folder path")
+        }
+        register("path", arguments[0])
+      - exec: |
+        git checkout master
+        && git subtree push --prefix $path origin gh-pages
+
+  - lazypush: |
+    git add .
+    && git commit -m "$@"
+    && git push
+
+
+# if [ -z "$1" ]
+# then
+#   echo "Which folder do you want to deploy to GitHub Pages?"
+#   exit 1
+# fi
+# # git subtree push --prefix $1 origin gh-pages
+# echo "$1"

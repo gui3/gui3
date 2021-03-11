@@ -15,6 +15,9 @@ https://dev.to/steelvoltage/you-probably-don-t-need-a-front-end-framework-26o6
 webpack babel ->
 https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
 
+https://blog.patricktriest.com/host-webapps-free/
+review of the best hosting options
+
 
 ## npm packages
 
