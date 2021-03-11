@@ -11,6 +11,20 @@
   
 </body>
 
+<script>
+const headers = new Headers({
 
+})
+const options = {
+  method: 'GET',
+  headers: headers,
+  mode: "cors",
+  cache: "default"
+}
+
+fetch("https://cors-allowed-template.glitch.me/data", options)
+  .then(data => data.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
 </script>
 </html>

@@ -10,6 +10,11 @@ research on the best way to embed a forum for free
 
 > for free easy discussion and notifications
 
+$$$ CUSTOM:
+my preferred choice,
+make a discord bot, host it on glitch,
+then get data through fetch.
+
 Discord Widget :
 useless
 only displays channel names and connect button
