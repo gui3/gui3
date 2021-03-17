@@ -31,6 +31,14 @@ node-cache -> most used cache packages
 https://www.npmjs.com/package/node-cache
 
 
+## i18n
+https://www.npmjs.com/package/svelte-i18n
+seems to be the best module for this
+
+https://lokalise.com/blog/svelte-i18n/
+long but precise tutorial
+
+
 ## apis
 
 see [dedicated md file](./about-apis.md)
