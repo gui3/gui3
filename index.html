@@ -5,12 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gui3's</title>
+  <link rel="stylesheet" href="./public/main.css">
 </head>
 <body>
   
   <h1>oh Hi Mark !</h1>
   
 </body>
+
+
+<script>
+console.log(window.location)
+</script>
+
+<script src="./public/vendor/socket.io.js"></script>
+<script>
+  var socket = io("https://gui3-server.glitch.me/", {
+    withCredentials: true,
+    extraHeaders: {
+      "my-custom-header": "abcd"
+    }
+  })
+</script>
 
 <script>
 const headers = new Headers({

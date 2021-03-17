@@ -23,6 +23,9 @@ Titan :
 need to add a bot to the channel
 why not ?
 
+Widgetbot:
+to be seen, free plan
+
 
 
 
