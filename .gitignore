@@ -1,3 +1,8 @@
-
 /node_modules/
+/public/build/
+
 .env
+
+/_archive/
+
+.DS_Store

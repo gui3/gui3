@@ -4,99 +4,99 @@
  * Released under the MIT License.
  */
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["io"] = factory();
-	else
-		root["io"] = factory();
+  if(typeof exports === "object" && typeof module === "object")
+    module.exports = factory();
+  else if(typeof define === "function" && define.amd)
+    define([], factory);
+  else if(typeof exports === "object")
+    exports["io"] = factory();
+  else
+    root["io"] = factory();
 })(self, function() {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/   // The module cache
+/******/   var installedModules = {};
 /******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/   // The require function
+/******/   function __webpack_require__(moduleId) {
 /******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
+/******/     // Check if module is in cache
+/******/     if(installedModules[moduleId]) {
+/******/       return installedModules[moduleId].exports;
+/******/     }
+/******/     // Create a new module (and put it into the cache)
+/******/     var module = installedModules[moduleId] = {
+/******/       i: moduleId,
+/******/       l: false,
+/******/       exports: {}
+/******/     };
 /******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/     // Execute the module function
+/******/     modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
+/******/     // Flag the module as loaded
+/******/     module.l = true;
 /******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/     // Return the exports of the module
+/******/     return module.exports;
+/******/   }
 /******/
 /******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./build/index.js");
+/******/   // expose the modules object (__webpack_modules__)
+/******/   __webpack_require__.m = modules;
+/******/
+/******/   // expose the module cache
+/******/   __webpack_require__.c = installedModules;
+/******/
+/******/   // define getter function for harmony exports
+/******/   __webpack_require__.d = function(exports, name, getter) {
+/******/     if(!__webpack_require__.o(exports, name)) {
+/******/       Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/     }
+/******/   };
+/******/
+/******/   // define __esModule on exports
+/******/   __webpack_require__.r = function(exports) {
+/******/     if(typeof Symbol !== "undefined" && Symbol.toStringTag) {
+/******/       Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+/******/     }
+/******/     Object.defineProperty(exports, "__esModule", { value: true });
+/******/   };
+/******/
+/******/   // create a fake namespace object
+/******/   // mode & 1: value is a module id, require it
+/******/   // mode & 2: merge all properties of value into the ns
+/******/   // mode & 4: return value when already ns object
+/******/   // mode & 8|1: behave like require
+/******/   __webpack_require__.t = function(value, mode) {
+/******/     if(mode & 1) value = __webpack_require__(value);
+/******/     if(mode & 8) return value;
+/******/     if((mode & 4) && typeof value === "object" && value && value.__esModule) return value;
+/******/     var ns = Object.create(null);
+/******/     __webpack_require__.r(ns);
+/******/     Object.defineProperty(ns, "default", { enumerable: true, value: value });
+/******/     if(mode & 2 && typeof value != "string") for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/     return ns;
+/******/   };
+/******/
+/******/   // getDefaultExport function for compatibility with non-harmony modules
+/******/   __webpack_require__.n = function(module) {
+/******/     var getter = module && module.__esModule ?
+/******/       function getDefault() { return module["default"]; } :
+/******/       function getModuleExports() { return module; };
+/******/     __webpack_require__.d(getter, "a", getter);
+/******/     return getter;
+/******/   };
+/******/
+/******/   // Object.prototype.hasOwnProperty.call
+/******/   __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/   // __webpack_public_path__
+/******/   __webpack_require__.p = "";
+/******/
+/******/
+/******/   // Load entry module and return exports
+/******/   return __webpack_require__(__webpack_require__.s = "./build/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -244,7 +244,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -383,7 +383,7 @@ var Manager = /*#__PURE__*/function (_typed_events_1$Stric) {
   }, {
     key: "maybeReconnectOnOpen",
     value: function maybeReconnectOnOpen() {
-      // Only try to reconnect if it's the first time we're connecting
+      // Only try to reconnect if it"s the first time we"re connecting
       if (!this._reconnecting && this._reconnection && this.backoff.attempts === 0) {
         // keeps reconnection from firing twice for the same reconnection loop
         this.reconnect();
@@ -436,7 +436,7 @@ var Manager = /*#__PURE__*/function (_typed_events_1$Stric) {
         debug("connect attempt will timeout after %d", timeout);
 
         if (timeout === 0) {
-          openSubDestroy(); // prevents a race condition with the 'open' event
+          openSubDestroy(); // prevents a race condition with the "open" event
         } // set timer
 
 
@@ -804,7 +804,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -824,7 +824,7 @@ var typed_events_1 = __webpack_require__(/*! ./typed-events */ "./build/typed-ev
 var debug = __webpack_require__(/*! debug */ "./node_modules/debug/src/browser.js")("socket.io-client:socket");
 /**
  * Internal events.
- * These events can't be emitted by the user.
+ * These events can"t be emitted by the user.
  */
 
 
@@ -939,7 +939,7 @@ var Socket = /*#__PURE__*/function (_typed_events_1$Stric) {
     }
     /**
      * Override `emit`.
-     * If the event is in `events`, it's emitted normally.
+     * If the event is in `events`, it"s emitted normally.
      *
      * @return self
      * @public
@@ -949,7 +949,7 @@ var Socket = /*#__PURE__*/function (_typed_events_1$Stric) {
     key: "emit",
     value: function emit(ev) {
       if (RESERVED_EVENTS.hasOwnProperty(ev)) {
-        throw new Error('"' + ev + '" is a reserved event name');
+        throw new Error(""" + ev + "" is a reserved event name");
       }
 
       for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
@@ -1254,7 +1254,7 @@ var Socket = /*#__PURE__*/function (_typed_events_1$Stric) {
     /**
      * Called upon forced client/server side disconnections,
      * this method ensures the manager stops tracking us and
-     * that reconnections don't get triggered for this.
+     * that reconnections don"t get triggered for this.
      *
      * @private
      */
@@ -1458,7 +1458,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -1817,7 +1817,7 @@ function mixin(obj) {
 
 Emitter.prototype.on = Emitter.prototype.addEventListener = function (event, fn) {
   this._callbacks = this._callbacks || {};
-  (this._callbacks['$' + event] = this._callbacks['$' + event] || []).push(fn);
+  (this._callbacks["$" + event] = this._callbacks["$" + event] || []).push(fn);
   return this;
 };
 /**
@@ -1861,11 +1861,11 @@ Emitter.prototype.off = Emitter.prototype.removeListener = Emitter.prototype.rem
   } // specific event
 
 
-  var callbacks = this._callbacks['$' + event];
+  var callbacks = this._callbacks["$" + event];
   if (!callbacks) return this; // remove all handlers
 
   if (1 == arguments.length) {
-    delete this._callbacks['$' + event];
+    delete this._callbacks["$" + event];
     return this;
   } // remove specific handler
 
@@ -1884,7 +1884,7 @@ Emitter.prototype.off = Emitter.prototype.removeListener = Emitter.prototype.rem
 
 
   if (callbacks.length === 0) {
-    delete this._callbacks['$' + event];
+    delete this._callbacks["$" + event];
   }
 
   return this;
@@ -1901,7 +1901,7 @@ Emitter.prototype.off = Emitter.prototype.removeListener = Emitter.prototype.rem
 Emitter.prototype.emit = function (event) {
   this._callbacks = this._callbacks || {};
   var args = new Array(arguments.length - 1),
-      callbacks = this._callbacks['$' + event];
+      callbacks = this._callbacks["$" + event];
 
   for (var i = 1; i < arguments.length; i++) {
     args[i - 1] = arguments[i];
@@ -1928,7 +1928,7 @@ Emitter.prototype.emit = function (event) {
 
 Emitter.prototype.listeners = function (event) {
   this._callbacks = this._callbacks || {};
-  return this._callbacks['$' + event] || [];
+  return this._callbacks["$" + event] || [];
 };
 /**
  * Check if this emitter has `event` handlers.
@@ -1968,7 +1968,7 @@ exports.destroy = function () {
   return function () {
     if (!warned) {
       warned = true;
-      console.warn('Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.');
+      console.warn("Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.");
     }
   };
 }();
@@ -1977,7 +1977,7 @@ exports.destroy = function () {
  */
 
 
-exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC', '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF', '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC', '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF', '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC', '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033', '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366', '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933', '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC', '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF', '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'];
+exports.colors = ["#0000CC", "#0000FF", "#0033CC", "#0033FF", "#0066CC", "#0066FF", "#0099CC", "#0099FF", "#00CC00", "#00CC33", "#00CC66", "#00CC99", "#00CCCC", "#00CCFF", "#3300CC", "#3300FF", "#3333CC", "#3333FF", "#3366CC", "#3366FF", "#3399CC", "#3399FF", "#33CC00", "#33CC33", "#33CC66", "#33CC99", "#33CCCC", "#33CCFF", "#6600CC", "#6600FF", "#6633CC", "#6633FF", "#66CC00", "#66CC33", "#9900CC", "#9900FF", "#9933CC", "#9933FF", "#99CC00", "#99CC33", "#CC0000", "#CC0033", "#CC0066", "#CC0099", "#CC00CC", "#CC00FF", "#CC3300", "#CC3333", "#CC3366", "#CC3399", "#CC33CC", "#CC33FF", "#CC6600", "#CC6633", "#CC9900", "#CC9933", "#CCCC00", "#CCCC33", "#FF0000", "#FF0033", "#FF0066", "#FF0099", "#FF00CC", "#FF00FF", "#FF3300", "#FF3333", "#FF3366", "#FF3399", "#FF33CC", "#FF33FF", "#FF6600", "#FF6633", "#FF9900", "#FF9933", "#FFCC00", "#FFCC33"];
 /**
  * Currently only WebKit-based Web Inspectors, Firefox >= v31,
  * and the Firebug extension (any Firefox version) are known
@@ -1989,24 +1989,24 @@ exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066F
 
 function useColors() {
   // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // initialized. Since we know we"re in Chrome, we"ll just detect this case
   // explicitly
-  if (typeof window !== 'undefined' && window.process && (window.process.type === 'renderer' || window.process.__nwjs)) {
+  if (typeof window !== "undefined" && window.process && (window.process.type === "renderer" || window.process.__nwjs)) {
     return true;
   } // Internet Explorer and Edge do not support colors.
 
 
-  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+  if (typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
     return false;
   } // Is webkit? http://stackoverflow.com/a/16459606/376773
   // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
 
 
-  return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || // Is firebug? http://stackoverflow.com/a/398120/376773
-  typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) || // Is firefox >= v31?
+  return typeof document !== "undefined" && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance || // Is firebug? http://stackoverflow.com/a/398120/376773
+  typeof window !== "undefined" && window.console && (window.console.firebug || window.console.exception && window.console.table) || // Is firefox >= v31?
   // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // Double check webkit in userAgent just in case we are in a worker
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+  typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 || // Double check webkit in userAgent just in case we are in a worker
+  typeof navigator !== "undefined" && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
 }
 /**
  * Colorize log arguments if enabled.
@@ -2016,27 +2016,27 @@ function useColors() {
 
 
 function formatArgs(args) {
-  args[0] = (this.useColors ? '%c' : '') + this.namespace + (this.useColors ? ' %c' : ' ') + args[0] + (this.useColors ? '%c ' : ' ') + '+' + module.exports.humanize(this.diff);
+  args[0] = (this.useColors ? "%c" : "") + this.namespace + (this.useColors ? " %c" : " ") + args[0] + (this.useColors ? "%c " : " ") + "+" + module.exports.humanize(this.diff);
 
   if (!this.useColors) {
     return;
   }
 
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit'); // The final "%c" is somewhat tricky, because there could be other
+  var c = "color: " + this.color;
+  args.splice(1, 0, c, "color: inherit"); // The final "%c" is somewhat tricky, because there could be other
   // arguments passed either before or after the %c, so we need to
   // figure out the correct index to insert the CSS into
 
   var index = 0;
   var lastC = 0;
   args[0].replace(/%[a-zA-Z%]/g, function (match) {
-    if (match === '%%') {
+    if (match === "%%") {
       return;
     }
 
     index++;
 
-    if (match === '%c') {
+    if (match === "%c") {
       // We only are interested in the *last* %c
       // (the user may have provided their own)
       lastC = index;
@@ -2066,9 +2066,9 @@ exports.log = console.debug || console.log || function () {};
 function save(namespaces) {
   try {
     if (namespaces) {
-      exports.storage.setItem('debug', namespaces);
+      exports.storage.setItem("debug", namespaces);
     } else {
-      exports.storage.removeItem('debug');
+      exports.storage.removeItem("debug");
     }
   } catch (error) {// Swallow
     // XXX (@Qix-) should we be logging these?
@@ -2086,13 +2086,13 @@ function load() {
   var r;
 
   try {
-    r = exports.storage.getItem('debug');
+    r = exports.storage.getItem("debug");
   } catch (error) {// Swallow
     // XXX (@Qix-) should we be logging these?
-  } // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  } // If debug isn"t set in LS, and we"re in Electron, try to load $DEBUG
 
 
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
+  if (!r && typeof process !== "undefined" && "env" in process) {
     r = process.env.DEBUG;
   }
 
@@ -2130,7 +2130,7 @@ formatters.j = function (v) {
   try {
     return JSON.stringify(v);
   } catch (error) {
-    return '[UnexpectedJSONParseError]: ' + error.message;
+    return "[UnexpectedJSONParseError]: " + error.message;
   }
 };
 
@@ -2235,25 +2235,25 @@ function setup(env) {
       prevTime = curr;
       args[0] = createDebug.coerce(args[0]);
 
-      if (typeof args[0] !== 'string') {
-        // Anything else let's inspect with %O
-        args.unshift('%O');
+      if (typeof args[0] !== "string") {
+        // Anything else let"s inspect with %O
+        args.unshift("%O");
       } // Apply any `formatters` transformations
 
 
       var index = 0;
       args[0] = args[0].replace(/%([a-zA-Z%])/g, function (match, format) {
-        // If we encounter an escaped % then don't increase the array index
-        if (match === '%%') {
-          return '%';
+        // If we encounter an escaped % then don"t increase the array index
+        if (match === "%%") {
+          return "%";
         }
 
         index++;
         var formatter = createDebug.formatters[format];
 
-        if (typeof formatter === 'function') {
+        if (typeof formatter === "function") {
           var val = args[index];
-          match = formatter.call(self, val); // Now we need to remove `args[index]` since it's inlined in the `format`
+          match = formatter.call(self, val); // Now we need to remove `args[index]` since it"s inlined in the `format`
 
           args.splice(index, 1);
           index--;
@@ -2273,7 +2273,7 @@ function setup(env) {
     debug.extend = extend;
     debug.destroy = createDebug.destroy; // XXX Temporary. Will be removed in the next major release.
 
-    Object.defineProperty(debug, 'enabled', {
+    Object.defineProperty(debug, "enabled", {
       enumerable: true,
       configurable: false,
       get: function get() {
@@ -2284,7 +2284,7 @@ function setup(env) {
       }
     }); // Env-specific initialization logic for debug instances
 
-    if (typeof createDebug.init === 'function') {
+    if (typeof createDebug.init === "function") {
       createDebug.init(debug);
     }
 
@@ -2292,7 +2292,7 @@ function setup(env) {
   }
 
   function extend(namespace, delimiter) {
-    var newDebug = createDebug(this.namespace + (typeof delimiter === 'undefined' ? ':' : delimiter) + namespace);
+    var newDebug = createDebug(this.namespace + (typeof delimiter === "undefined" ? ":" : delimiter) + namespace);
     newDebug.log = this.log;
     return newDebug;
   }
@@ -2310,7 +2310,7 @@ function setup(env) {
     createDebug.names = [];
     createDebug.skips = [];
     var i;
-    var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+    var split = (typeof namespaces === "string" ? namespaces : "").split(/[\s,]+/);
     var len = split.length;
 
     for (i = 0; i < len; i++) {
@@ -2319,12 +2319,12 @@ function setup(env) {
         continue;
       }
 
-      namespaces = split[i].replace(/\*/g, '.*?');
+      namespaces = split[i].replace(/\*/g, ".*?");
 
-      if (namespaces[0] === '-') {
-        createDebug.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+      if (namespaces[0] === "-") {
+        createDebug.skips.push(new RegExp("^" + namespaces.substr(1) + "$"));
       } else {
-        createDebug.names.push(new RegExp('^' + namespaces + '$'));
+        createDebug.names.push(new RegExp("^" + namespaces + "$"));
       }
     }
   }
@@ -2338,9 +2338,9 @@ function setup(env) {
 
   function disable() {
     var namespaces = [].concat(_toConsumableArray(createDebug.names.map(toNamespace)), _toConsumableArray(createDebug.skips.map(toNamespace).map(function (namespace) {
-      return '-' + namespace;
-    }))).join(',');
-    createDebug.enable('');
+      return "-" + namespace;
+    }))).join(",");
+    createDebug.enable("");
     return namespaces;
   }
   /**
@@ -2353,7 +2353,7 @@ function setup(env) {
 
 
   function enabled(name) {
-    if (name[name.length - 1] === '*') {
+    if (name[name.length - 1] === "*") {
       return true;
     }
 
@@ -2384,7 +2384,7 @@ function setup(env) {
 
 
   function toNamespace(regexp) {
-    return regexp.toString().substring(2, regexp.toString().length - 2).replace(/\.\*\?$/, '*');
+    return regexp.toString().substring(2, regexp.toString().length - 2).replace(/\.\*\?$/, "*");
   }
   /**
   * Coerce `val`.
@@ -2409,7 +2409,7 @@ function setup(env) {
 
 
   function destroy() {
-    console.warn('Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.');
+    console.warn("Instance method `debug.destroy()` is deprecated and no longer does anything. It will be removed in the next major version of `debug`.");
   }
 
   createDebug.enable(createDebug.load());
@@ -2491,7 +2491,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -2621,7 +2621,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
   _createClass(Socket, [{
     key: "createTransport",
     value: function createTransport(name) {
-      debug('creating transport "%s"', name);
+      debug("creating transport "%s"", name);
       var query = clone(this.opts.query); // append engine.io protocol identifier
 
       query.EIO = parser.protocol; // transport name
@@ -2719,7 +2719,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
   }, {
     key: "probe",
     value: function probe(name) {
-      debug('probing transport "%s"', name);
+      debug("probing transport "%s"", name);
       var transport = this.createTransport(name, {
         probe: 1
       });
@@ -2734,7 +2734,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
         }
 
         if (failed) return;
-        debug('probe transport "%s" opened', name);
+        debug("probe transport "%s" opened", name);
         transport.send([{
           type: "ping",
           data: "probe"
@@ -2743,12 +2743,12 @@ var Socket = /*#__PURE__*/function (_Emitter) {
           if (failed) return;
 
           if ("pong" === msg.type && "probe" === msg.data) {
-            debug('probe transport "%s" pong', name);
+            debug("probe transport "%s" pong", name);
             self.upgrading = true;
             self.emit("upgrading", transport);
             if (!transport) return;
             Socket.priorWebsocketSuccess = "websocket" === transport.name;
-            debug('pausing current transport "%s"', self.transport.name);
+            debug("pausing current transport "%s"", self.transport.name);
             self.transport.pause(function () {
               if (failed) return;
               if ("closed" === self.readyState) return;
@@ -2764,7 +2764,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
               self.flush();
             });
           } else {
-            debug('probe transport "%s" failed', name);
+            debug("probe transport "%s" failed", name);
             var err = new Error("probe error");
             err.transport = transport.name;
             self.emit("upgradeError", err);
@@ -2786,23 +2786,23 @@ var Socket = /*#__PURE__*/function (_Emitter) {
         var error = new Error("probe error: " + err);
         error.transport = transport.name;
         freezeTransport();
-        debug('probe transport "%s" failed because of error: %s', name, err);
+        debug("probe transport "%s" failed because of error: %s", name, err);
         self.emit("upgradeError", error);
       }
 
       function onTransportClose() {
         onerror("transport closed");
-      } // When the socket is closed while we're probing
+      } // When the socket is closed while we"re probing
 
 
       function onclose() {
         onerror("socket closed");
-      } // When the socket is upgraded while we're probing
+      } // When the socket is upgraded while we"re probing
 
 
       function onupgrade(to) {
         if (transport && to.name !== transport.name) {
-          debug('"%s" works - aborting "%s"', to.name, transport.name);
+          debug(""%s" works - aborting "%s"", to.name, transport.name);
           freezeTransport();
         }
       } // Remove all listeners on the transport and on self
@@ -2859,7 +2859,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
     key: "onPacket",
     value: function onPacket(packet) {
       if ("opening" === this.readyState || "open" === this.readyState || "closing" === this.readyState) {
-        debug('socket receive: type "%s", data "%s"', packet.type, packet.data);
+        debug("socket receive: type "%s", data "%s"", packet.type, packet.data);
         this.emit("packet", packet); // Socket is live - any packet counts
 
         this.emit("heartbeat");
@@ -2887,7 +2887,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
             break;
         }
       } else {
-        debug('packet received with socket readyState "%s"', this.readyState);
+        debug("packet received with socket readyState "%s"", this.readyState);
       }
     }
     /**
@@ -3073,7 +3073,7 @@ var Socket = /*#__PURE__*/function (_Emitter) {
       }
 
       function waitForUpgrade() {
-        // wait for upgrade to finish since we can't send packets while pausing a transport
+        // wait for upgrade to finish since we can"t send packets while pausing a transport
         self.once("upgrade", cleanupAndClose);
         self.once("upgradeError", cleanupAndClose);
       }
@@ -3104,13 +3104,13 @@ var Socket = /*#__PURE__*/function (_Emitter) {
     key: "onClose",
     value: function onClose(reason, desc) {
       if ("opening" === this.readyState || "open" === this.readyState || "closing" === this.readyState) {
-        debug('socket close with reason: "%s"', reason);
+        debug("socket close with reason: "%s"", reason);
         var self = this; // clear timers
 
         clearTimeout(this.pingIntervalTimer);
         clearTimeout(this.pingTimeoutTimer); // stop event from firing again for transport
 
-        this.transport.removeAllListeners("close"); // ensure transport won't stay open
+        this.transport.removeAllListeners("close"); // ensure transport won"t stay open
 
         this.transport.close(); // ignore further transport communication
 
@@ -3206,7 +3206,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -3444,7 +3444,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -3622,7 +3622,7 @@ var JSONPPolling = /*#__PURE__*/function (_Polling) {
 
         try {
           // ie6 dynamic iframes with target="" support (thanks Chris Lambacher)
-          var html = '<iframe src="javascript:0" name="' + self.iframeId + '">';
+          var html = "<iframe src="javascript:0" name="" + self.iframeId + "">";
           iframe = document.createElement(html);
         } catch (e) {
           iframe = document.createElement("iframe");
@@ -3694,7 +3694,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -3924,7 +3924,7 @@ var Request = /*#__PURE__*/function (_Emitter) {
             if (200 === xhr.status || 1223 === xhr.status) {
               self.onLoad();
             } else {
-              // make sure the `error` event handler that's user-set
+              // make sure the `error` event handler that"s user-set
               // does not throw in the same tick and gets caught here
               setTimeout(function () {
                 self.onError(typeof xhr.status === "number" ? xhr.status : 0);
@@ -3937,7 +3937,7 @@ var Request = /*#__PURE__*/function (_Emitter) {
         xhr.send(this.data);
       } catch (e) {
         // Need to defer since .create() is called directly from the constructor
-        // and thus the 'error' event can only be only bound *after* this exception
+        // and thus the "error" event can only be only bound *after* this exception
         // occurs.  Therefore, also, we cannot throw here at all.
         setTimeout(function () {
           self.onError(e);
@@ -4114,7 +4114,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -4242,14 +4242,14 @@ var Polling = /*#__PURE__*/function (_Transport) {
       parser.decodePayload(data, this.socket.binaryType).forEach(callback); // if an event did not trigger closing
 
       if ("closed" !== this.readyState) {
-        // if we got data we're not polling
+        // if we got data we"re not polling
         this.polling = false;
         this.emit("pollComplete");
 
         if ("open" === this.readyState) {
           this.poll();
         } else {
-          debug('ignoring poll - transport state "%s"', this.readyState);
+          debug("ignoring poll - transport state "%s"", this.readyState);
         }
       }
     }
@@ -4275,7 +4275,7 @@ var Polling = /*#__PURE__*/function (_Transport) {
         debug("transport open - closing");
         close();
       } else {
-        // in case we're trying to close while
+        // in case we"re trying to close while
         // handshaking is in progress (GH-164)
         debug("transport not open - deferring close");
         this.once("open", close);
@@ -4396,7 +4396,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -4465,7 +4465,7 @@ var WS = /*#__PURE__*/function (_Transport) {
       }
 
       var uri = this.uri();
-      var protocols = this.opts.protocols; // React Native only supports the 'headers' option, and will print a warning if anything else is passed
+      var protocols = this.opts.protocols; // React Native only supports the "headers" option, and will print a warning if anything else is passed
 
       var opts = isReactNative ? {} : pick(this.opts, "agent", "perMessageDeflate", "pfx", "key", "passphrase", "cert", "ca", "ciphers", "rejectUnauthorized", "localAddress", "protocolVersion", "origin", "maxPayload", "family", "checkServerIdentity");
 
@@ -4547,7 +4547,7 @@ var WS = /*#__PURE__*/function (_Transport) {
                   opts.compress = false;
                 }
               }
-            } // Sometimes the websocket has already been closed but the browser didn't
+            } // Sometimes the websocket has already been closed but the browser didn"t
             // have a chance of informing us about it yet, in that case send will
             // throw an error
 
@@ -5043,7 +5043,7 @@ module.exports = {
  *   - https://github.com/Modernizr/Modernizr/blob/master/feature-detects/cors.js
  */
 try {
-  module.exports = typeof XMLHttpRequest !== 'undefined' && 'withCredentials' in new XMLHttpRequest();
+  module.exports = typeof XMLHttpRequest !== "undefined" && "withCredentials" in new XMLHttpRequest();
 } catch (err) {
   // if XMLHttp support is disabled in IE then it will throw
   // when trying to create
@@ -5089,13 +5089,13 @@ module.exports = function (val, options) {
 
   var type = _typeof(val);
 
-  if (type === 'string' && val.length > 0) {
+  if (type === "string" && val.length > 0) {
     return parse(val);
-  } else if (type === 'number' && isFinite(val)) {
+  } else if (type === "number" && isFinite(val)) {
     return options["long"] ? fmtLong(val) : fmtShort(val);
   }
 
-  throw new Error('val is not a non-empty string or a valid number. val=' + JSON.stringify(val));
+  throw new Error("val is not a non-empty string or a valid number. val=" + JSON.stringify(val));
 };
 /**
  * Parse the given `str` and return milliseconds.
@@ -5120,52 +5120,52 @@ function parse(str) {
   }
 
   var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
+  var type = (match[2] || "ms").toLowerCase();
 
   switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
+    case "years":
+    case "year":
+    case "yrs":
+    case "yr":
+    case "y":
       return n * y;
 
-    case 'weeks':
-    case 'week':
-    case 'w':
+    case "weeks":
+    case "week":
+    case "w":
       return n * w;
 
-    case 'days':
-    case 'day':
-    case 'd':
+    case "days":
+    case "day":
+    case "d":
       return n * d;
 
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
+    case "hours":
+    case "hour":
+    case "hrs":
+    case "hr":
+    case "h":
       return n * h;
 
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
+    case "minutes":
+    case "minute":
+    case "mins":
+    case "min":
+    case "m":
       return n * m;
 
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
+    case "seconds":
+    case "second":
+    case "secs":
+    case "sec":
+    case "s":
       return n * s;
 
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
+    case "milliseconds":
+    case "millisecond":
+    case "msecs":
+    case "msec":
+    case "ms":
       return n;
 
     default:
@@ -5185,22 +5185,22 @@ function fmtShort(ms) {
   var msAbs = Math.abs(ms);
 
   if (msAbs >= d) {
-    return Math.round(ms / d) + 'd';
+    return Math.round(ms / d) + "d";
   }
 
   if (msAbs >= h) {
-    return Math.round(ms / h) + 'h';
+    return Math.round(ms / h) + "h";
   }
 
   if (msAbs >= m) {
-    return Math.round(ms / m) + 'm';
+    return Math.round(ms / m) + "m";
   }
 
   if (msAbs >= s) {
-    return Math.round(ms / s) + 's';
+    return Math.round(ms / s) + "s";
   }
 
-  return ms + 'ms';
+  return ms + "ms";
 }
 /**
  * Long format for `ms`.
@@ -5215,22 +5215,22 @@ function fmtLong(ms) {
   var msAbs = Math.abs(ms);
 
   if (msAbs >= d) {
-    return plural(ms, msAbs, d, 'day');
+    return plural(ms, msAbs, d, "day");
   }
 
   if (msAbs >= h) {
-    return plural(ms, msAbs, h, 'hour');
+    return plural(ms, msAbs, h, "hour");
   }
 
   if (msAbs >= m) {
-    return plural(ms, msAbs, m, 'minute');
+    return plural(ms, msAbs, m, "minute");
   }
 
   if (msAbs >= s) {
-    return plural(ms, msAbs, s, 'second');
+    return plural(ms, msAbs, s, "second");
   }
 
-  return ms + ' ms';
+  return ms + " ms";
 }
 /**
  * Pluralization helper.
@@ -5239,7 +5239,7 @@ function fmtLong(ms) {
 
 function plural(ms, msAbs, n, name) {
   var isPlural = msAbs >= n * 1.5;
-  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
+  return Math.round(ms / n) + " " + name + (isPlural ? "s" : "");
 }
 
 /***/ }),
@@ -5259,12 +5259,12 @@ function plural(ms, msAbs, n, name) {
  * @api private
  */
 exports.encode = function (obj) {
-  var str = '';
+  var str = "";
 
   for (var i in obj) {
     if (obj.hasOwnProperty(i)) {
-      if (str.length) str += '&';
-      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
+      if (str.length) str += "&";
+      str += encodeURIComponent(i) + "=" + encodeURIComponent(obj[i]);
     }
   }
 
@@ -5280,10 +5280,10 @@ exports.encode = function (obj) {
 
 exports.decode = function (qs) {
   var qry = {};
-  var pairs = qs.split('&');
+  var pairs = qs.split("&");
 
   for (var i = 0, l = pairs.length; i < l; i++) {
-    var pair = pairs[i].split('=');
+    var pair = pairs[i].split("=");
     qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
   }
 
@@ -5306,34 +5306,34 @@ exports.decode = function (qs) {
  * @api private
  */
 var re = /^(?:(?![^:@]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
-var parts = ['source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'];
+var parts = ["source", "protocol", "authority", "userInfo", "user", "password", "host", "port", "relative", "path", "directory", "file", "query", "anchor"];
 
 module.exports = function parseuri(str) {
   var src = str,
-      b = str.indexOf('['),
-      e = str.indexOf(']');
+      b = str.indexOf("["),
+      e = str.indexOf("]");
 
   if (b != -1 && e != -1) {
-    str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ';') + str.substring(e, str.length);
+    str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ";") + str.substring(e, str.length);
   }
 
-  var m = re.exec(str || ''),
+  var m = re.exec(str || ""),
       uri = {},
       i = 14;
 
   while (i--) {
-    uri[parts[i]] = m[i] || '';
+    uri[parts[i]] = m[i] || "";
   }
 
   if (b != -1 && e != -1) {
     uri.source = src;
-    uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ':');
-    uri.authority = uri.authority.replace('[', '').replace(']', '').replace(/;/g, ':');
+    uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ":");
+    uri.authority = uri.authority.replace("[", "").replace("]", "").replace(/;/g, ":");
     uri.ipv6uri = true;
   }
 
-  uri.pathNames = pathNames(uri, uri['path']);
-  uri.queryKey = queryKey(uri, uri['query']);
+  uri.pathNames = pathNames(uri, uri["path"]);
+  uri.queryKey = queryKey(uri, uri["query"]);
   return uri;
 };
 
@@ -5341,11 +5341,11 @@ function pathNames(obj, path) {
   var regx = /\/{2,9}/g,
       names = path.replace(regx, "/").split("/");
 
-  if (path.substr(0, 1) == '/' || path.length === 0) {
+  if (path.substr(0, 1) == "/" || path.length === 0) {
     names.splice(0, 1);
   }
 
-  if (path.substr(path.length - 1, 1) == '/') {
+  if (path.substr(path.length - 1, 1) == "/") {
     names.splice(names.length - 1, 1);
   }
 
@@ -5396,7 +5396,7 @@ function deconstructPacket(packet) {
   var packetData = packet.data;
   var pack = packet;
   pack.data = _deconstructPacket(packetData, buffers);
-  pack.attachments = buffers.length; // number of binary 'attachments'
+  pack.attachments = buffers.length; // number of binary "attachments"
 
   return {
     packet: pack,
@@ -5503,7 +5503,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn"t been initialised - super() hasn"t been called"); } return self; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -5611,7 +5611,7 @@ var Encoder = /*#__PURE__*/function () {
       return str;
     }
     /**
-     * Encode packet as 'buffer sequence' by removing blobs, and
+     * Encode packet as "buffer sequence" by removing blobs, and
      * deconstructing packet into object with placeholders and
      * a list of buffers.
      */
@@ -5664,7 +5664,7 @@ var Decoder = /*#__PURE__*/function (_Emitter) {
         packet = this.decodeString(obj);
 
         if (packet.type === PacketType.BINARY_EVENT || packet.type === PacketType.BINARY_ACK) {
-          // binary packet's json
+          // binary packet"s json
           this.reconstructor = new BinaryReconstructor(packet); // no attachments, labeled binary but no binary data to follow
 
           if (packet.attachments === 0) {
@@ -5780,7 +5780,7 @@ var Decoder = /*#__PURE__*/function (_Emitter) {
     key: "destroy",
 
     /**
-     * Deallocates a parser's resources
+     * Deallocates a parser"s resources
      */
     value: function destroy() {
       if (this.reconstructor) {
@@ -5824,7 +5824,7 @@ function tryParse(str) {
   }
 }
 /**
- * A manager of a binary event's 'buffer sequence'. Should
+ * A manager of a binary event"s "buffer sequence". Should
  * be constructed whenever a packet of type BINARY_EVENT is
  * decoded.
  *
@@ -5965,7 +5965,7 @@ exports.hasBinary = hasBinary;
 "use strict";
 
 
-var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''),
+var alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_".split(""),
     length = 64,
     map = {},
     seed = 0,
@@ -5980,7 +5980,7 @@ var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_
  */
 
 function encode(num) {
-  var encoded = '';
+  var encoded = "";
 
   do {
     encoded = alphabet[num % length] + encoded;
@@ -6018,7 +6018,7 @@ function decode(str) {
 function yeast() {
   var now = encode(+new Date());
   if (now !== prev) return seed = 0, prev = now;
-  return now + '.' + encode(seed++);
+  return now + "." + encode(seed++);
 } //
 // Map each character to its index.
 //
