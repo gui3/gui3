@@ -10,6 +10,7 @@ html, body {
 code pre {
   background: #123;
   color: #eee;
+  overflow: auto;
 
   border: 3px solid #444;
   border-radius: 10px;
