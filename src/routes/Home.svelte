@@ -2,6 +2,7 @@
   import socket from "../server/socket.js"
   
   socket.onAny((ev, ...args) => console.log(ev, args))
+  socket.emit("message", "coucou toi")
 </script>
 
 <h1>Hello world!</h1>
