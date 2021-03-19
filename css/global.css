@@ -7,6 +7,17 @@ html, body {
   padding: 0;
 }
 
+code pre {
+  background: #123;
+  color: #eee;
+
+  border: 3px solid #444;
+  border-radius: 10px;
+  font-family: monospace;
+
+  min-height: 10em;
+}
+
 /* switching screen size */
 .content {
   max-width: 240px;
