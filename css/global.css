@@ -7,6 +7,21 @@ html, body {
   padding: 0;
 }
 
+a:hover, button:hover {
+  outline: 3px solid #f00 !important;
+}
+
+button {
+  background: inherit;
+  border-radius: 0.5em;
+}
+button:active {
+  box-shadow: 0;
+}
+button:focus {
+  outline: 0;
+}
+
 code pre {
   background: #123;
   color: #eee;
@@ -55,13 +70,13 @@ code pre {
   background: transparent;
 }
 ::-webkit-scrollbar-track {
-  border: 1px solid #07a;
-  background-color: #eee;
-  border-radius: 0.4em;
+  border: 1px solid #077;
+  background-color: inherit;
+  border-radius: 1em;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #4cf;
-  border-radius: 0.4em;
+  background-color: #4fc;
+  border-radius: 1em;
   border: 2px solid #07a;
 }
 ::-webkit-scrollbar-thumb:hover {
