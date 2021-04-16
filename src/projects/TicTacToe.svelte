@@ -23,9 +23,4 @@
 <div class="TicTacToe" bind:this={container}/>
 
 <style>
-  .TicTacToe {
-    background: inherit !important;
-    color: inherit !important;
-    border-radius: 0 !important;
-  }
 </style>

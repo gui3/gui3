@@ -11,5 +11,6 @@ on:click={click}>
 <style>
   .CloseButton {
     float: right;
+    color: inherit;
   }
 </style>

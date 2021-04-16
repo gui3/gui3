@@ -11,9 +11,31 @@ h1, h2, h3 {
   font-family: monospace;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  -font-weight: bold;
+  color: inherit;
+  border-bottom: 2px dotted #fa5;
+  font-style: italic;
+}
+
+a:hover {
+  text-shadow: 2px 2px 2px #fa5;
+}
+
 a.nolink {
   text-decoration: none;
   color: inherit;
+  border-bottom: none;
+  font-style: inherit;
 }
 
 .bold {

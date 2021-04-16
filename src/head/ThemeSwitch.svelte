@@ -18,6 +18,7 @@ on:click={switchTheme}>
   size="medium"
   string="{$theme_store === "light" ? "🌘" : "🌞"}"
   />
+  {$theme_store === "dark" ? "mode clair" : "mode sombre"}
 </span>
 
 <style>
