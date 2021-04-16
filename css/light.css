@@ -4,6 +4,10 @@ html {
   color: #111;
 }
 
+button {
+  border-color: #111;
+}
+
 .opaque {
   background: #fff;
 }

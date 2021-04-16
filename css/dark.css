@@ -4,6 +4,10 @@ html {
   color: #eee;
 }
 
+button {
+  border-color: #eee;
+}
+
 .opaque {
   background: #222;
 }
