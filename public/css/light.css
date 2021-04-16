@@ -1,0 +1,44 @@
+
+html {
+  background: #fff;
+  color: #111;
+}
+
+.opaque {
+  background: #fff;
+}
+
+.negative {
+  background: #111;
+  color: #fff;
+}
+
+.Card {
+  border: 2px solid #111;
+  border-radius: 1em 0;
+  box-shadow: 2px 3px 4px #111;
+}
+
+/* selection */
+::selection {
+  background-color: #fe5;
+  color: #111;
+}
+/* end selection */
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fe5;
+}
+
+
+-a:hover, button:hover, .clickable:hover {
+  -outline: 3px solid #f00 !important;
+  box-shadow: -3px 3px 1px #000;
+  border-radius: 7px;
+  cursor: pointer;
+}
+a:active, button:active, .clickable:active {
+  -outline: 3px solid #f00 !important;
+  box-shadow: 0 0 3px #000;
+  -border-radius: 8px;
+}

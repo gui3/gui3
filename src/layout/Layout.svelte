@@ -1,12 +1,15 @@
 <script>
-  import {location} from 'svelte-spa-router'
+  //import {location} from 'svelte-spa-router'
 
+  import Css from "../head/Css.svelte"
   import Header from "./Header.svelte"
   import Footer from "./Footer.svelte"
-
-  console.log($location)
   
 </script>
+
+<svelte:head>
+  <Css/>
+</svelte:head>
 
 <Header />
 <section class="content">

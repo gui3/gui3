@@ -7,13 +7,72 @@ html, body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-family: monospace;
+}
+
+a.nolink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+-a:hover, button:hover, .clickable:hover {
+  -outline: 3px solid #f00 !important;
+  box-shadow: -3px 3px 1px #000;
+  border-radius: 7px;
+  cursor: pointer;
+}
+a:active, button:active, .clickable:active {
+  -outline: 3px solid #f00 !important;
+  box-shadow: 0 0 3px #000;
+  -border-radius: 8px;
+}
+
+button {
+  background: inherit;
+  border-radius: 0.5em;
+}
+button:active {
+  box-shadow: 0;
+}
+button:focus {
+  outline: 0;
+}
+
+.no-select, .clickable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+hr {
+  border: none;
+}
+
+code pre {
+  background: #123;
+  color: #eee;
+  overflow: auto;
+
+  border: 3px solid #444;
+  border-radius: 10px;
+  font-family: monospace;
+
+  min-height: 10em;
+}
+
 /* switching screen size */
 .content {
   max-width: 240px;
   margin: 0 auto;
 }
 .screen_big, .screen_medium {
-  visibility: hidden;
+  display: none;
 }
 @media (min-width: 430px) {
   .content {
@@ -21,7 +80,11 @@ html, body {
     margin: 0 auto;
   }
   .screen_medium {
-    visibility: visible;
+    display: inline;
+    display: initial;
+  }
+  .screen_small {
+    display: none;
   }
 }
 @media (min-width: 640px) {
@@ -30,7 +93,8 @@ html, body {
     margin: 0 15%;
   }
   .screen_big {
-    visibility: visible;
+    display: inline;
+    display: initial;
   }
 }
 /* end */
@@ -43,16 +107,23 @@ html, body {
   background: transparent;
 }
 ::-webkit-scrollbar-track {
-  border: 1px solid #07a;
-  background-color: #eee;
-  border-radius: 0.4em;
+  border: 1px solid #123;
+  background-color: inherit;
+  border-radius: 1em;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #4cf;
-  border-radius: 0.4em;
-  border: 2px solid #07a;
+  background-color: #678;
+  border-radius: 1em;
+  border: 2px solid #123;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #f55;
+  background-color: #fe5;
 }
 /* end scrollbars */
+
+/* selection */
+::selection {
+  background-color: #fe5;
+  color: #111;
+}
+/* end selection */

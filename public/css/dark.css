@@ -1,0 +1,44 @@
+
+html {
+  background: #222;
+  color: #eee;
+}
+
+.opaque {
+  background: #222;
+}
+
+.negative {
+  background: #eee;
+  color: #222;
+}
+
+.Card {
+  border: 2px solid #eee;
+  border-radius: 1em 0;
+  box-shadow: 2px 3px 4px #eee;
+}
+
+/* selection */
+::selection {
+  background-color: #a0a;
+  color: #eee;
+}
+/* end selection */
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a;
+}
+
+
+-a:hover, button:hover, .clickable:hover {
+  -outline: 3px solid #f00 !important;
+  box-shadow: -3px 3px 1px #777;
+  border-radius: 7px;
+  cursor: pointer;
+}
+a:active, button:active, .clickable:active {
+  -outline: 3px solid #f00 !important;
+  box-shadow: 0 0 3px #777;
+  -border-radius: 8px;
+}

@@ -3,8 +3,8 @@
 </script>
 
 <footer>
-  <hr/>
   <div class="content">
+    <hr class="negative"/>
     Site réalisé grâce à
   
     <br/>
@@ -24,11 +24,15 @@
   footer {
     margin-top: 3em;
     padding: 1em;
-    color: #444;
+    color: #777;
 
     text-align: center;
   }
   footer a {
-    color: #444;
+    color: #777;
+  }
+  footer hr {
+    background: #777;
+    height: 1px;
   }
 </style>

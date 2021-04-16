@@ -7,7 +7,9 @@
 
   function setupGame () {
     tictactoe.new(container, {
-      showTerminal: false
+      showTerminal: false,
+      frontColor: "inherit",
+      backColor: "inherit"
     })
   }
 </script>
@@ -18,4 +20,12 @@
   on:loaded={setupGame}
 />
 
-<div bind:this={container}/>
+<div class="TicTacToe" bind:this={container}/>
+
+<style>
+  .TicTacToe {
+    background: inherit !important;
+    color: inherit !important;
+    border-radius: 0 !important;
+  }
+</style>

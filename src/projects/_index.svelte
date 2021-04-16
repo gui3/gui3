@@ -1,5 +1,8 @@
 <script>
+  import Card from "../components/Card.svelte"
   import TicTacToe from "./TicTacToe.svelte"
 </script>
 
-<TicTacToe />
+<Card>
+  <TicTacToe />
+</Card>
