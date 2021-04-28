@@ -1,5 +1,6 @@
 <script>
   import breadcrumbs from "./breadcrumbs.js"
+  import { location } from "svelte-spa-router"
   
   import Logo from "../components/Logo.svelte"
 </script>
@@ -7,7 +8,7 @@
 <nav class="Breadcrumbs opaque">
   {#each breadcrumbs as route}
     <a
-    class="clickable nolink"
+    class="clickable nolink{$location.match(route.regex) ? " current" : ""}"
     href="#{route.path}">
       <Logo
       size="small"
@@ -31,5 +32,11 @@
 
   .Breadcrumbs * {
     margin: 5px 2px;
+  }
+
+  .current {
+    -background: #222;
+    -color: #fa0;
+    border-bottom: 3px solid #f00
   }
 </style>

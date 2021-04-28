@@ -22,5 +22,11 @@ export default [
     name: "Serveur",
     regex: /^\/server\/?.*$/,
     icon: "🤖"
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    regex: /^\/contact\/?.*$/,
+    icon: "☎️"
   }
 ]

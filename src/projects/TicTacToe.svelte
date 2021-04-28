@@ -20,6 +20,8 @@
   on:loaded={setupGame}
 />
 
+<h2>le Morpion</h2>
+
 <div class="TicTacToe" bind:this={container}/>
 
 <style>
