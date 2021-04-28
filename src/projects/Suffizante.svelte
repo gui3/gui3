@@ -23,6 +23,10 @@
   de par le fait qu'il faut les créer à la main.
 </p>
 
+<a href="https://github.com/gui3/Suffizante">
+  Suivez l'avancement du projet ICI ou essayez le logiciel chez vous
+</a>
+
 <h3>
   Réalisé à ce jour
 </h3>
@@ -41,6 +45,7 @@
 src="./img/projects/Suffizante/project1.PNG"
 alt="forme d'onde, track complête"
 width="100%"
+style="max-width: 500px;"
 />
 
 <h4>Zoom moyen :</h4>
@@ -48,6 +53,7 @@ width="100%"
 src="./img/projects/Suffizante/project2.PNG"
 alt="forme d'onde, moitié zoom"
 width="100%"
+style="max-width: 500px;"
 />
 
 <h4>Zoom maximum :</h4>
@@ -55,8 +61,5 @@ width="100%"
 src="./img/projects/Suffizante/project3.PNG"
 alt="forme d'onde, zoom complet"
 width="100%"
+style="max-width: 500px;"
 />
-
-<a href="https://github.com/gui3/Suffizante">
-  Suivez l'avancement du projet ICI ou essayez le logiciel chez vous
-</a>

@@ -9,7 +9,12 @@
     tictactoe.new(container, {
       showTerminal: false,
       frontColor: "inherit",
-      backColor: "inherit"
+      backColor: "inherit",
+      cellWidth: "50px",
+      cellHeight: "50px",
+      fontSize: "30px",
+      width: "200px",
+      gameHeight: "200px"
     })
   }
 </script>

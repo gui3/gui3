@@ -7,7 +7,7 @@
   Un petit site statique en <strong>React</strong> hébergé par github,
   principalement motivé pour apprendre React,
   Il lit les données extraites de la
-  <a href="">
+  <a href="https://www.unicode.org/Public/UCD/latest/">
     Unicode Character Database
   </a>
   et permet de faire une recherche (assez rudimentaire)
@@ -23,4 +23,5 @@
 src="./img/projects/anicode/overview.PNG"
 alt="interface du site Anicode"
 width="100%"
+style="max-width: 300px;"
 />
