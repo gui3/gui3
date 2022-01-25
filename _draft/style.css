@@ -1,0 +1,15 @@
+
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.article .section {
+    flex: 1;
+}
+
+.full-height {
+    height: 100vh;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gui3 draft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Gui3's</h2>
+    </header>
+    <main>
+        <article class="article">
+            <section class="section masonry description full-height">
+                <h3>Masonry dynamique</h3>
+                <p>
+                    Un bout de code javascript
+                    permet de charger des urls d'images
+                    et de les afficher dynamiquement
+                    et aléatoirement en gallerie "masonry".
+                    <a href="#">voir le code</a>
+                </p>
+            </section>
+            <section class="section masonry target full-height">
+
+            </section>
+        </article>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="scripts/AutoMasonry.js"></script>
+<script>
+const mas = new AutoMasonry(document, {
+    repeatBlocks: false,
+    shuffleBlocks: false
+})
+mas.placeIntoTarget(document.querySelector(".masonry.target"))
+/*
+for (let i = 0; i < 3; i++) {
+    mas.addImage(
+        "https://loremflickr.com/" + (100 * i) + "/360", 
+        "random placeholder image"
+    )
+}
+*/
+mas.fill()
+
+mas.interval = setInterval(
+    function() {
+        mas.reset()
+        /*
+        if (
+            mas.isFull()
+            || (
+                mas.displayedBlocks.length > 5
+                && Math.random() < 0.5
+            )
+        ) {
+            mas.removeBlock(mas.getRandomBlock())
+        } else if (Math.random() > 0.95) {
+            mas.reset()
+        } else {
+            mas.placeOneBlockRandom()
+        }
+        */
+    },
+    500
+)
+
+function clear () {
+    clearInterval(mas.interval)
+}
+
+</script>
+</html>
