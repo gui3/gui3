@@ -1,4 +1,51 @@
+@keyframes neon {
+    0% {
+      fill: #17FF66;
+    }
+    25% {
+      fill: #05f;
+    }
+    50% {
+      fill: #f0a;
+    }
+    75% {
+      fill: #fc0;
+    }
+    100% {
+      fill: #17ff66;
+    }
+}
 
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#gui3-logo {
+    fill: #17FF66;
+    stroke: black;
+    height: 5rem;
+    animation: 5s linear neon infinite;
+}
+
+#gui3-logo:hover {
+    fill: #f00 !important;
+    stroke: #222 !important;
+    animation: 0.2s shake 2;
+}
 
 .article {
     display: flex;
