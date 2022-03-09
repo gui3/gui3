@@ -1,19 +1,175 @@
+:root {
+  --color-front: #523;
+  --color-back: #fed;
+  --color-mid: #852;
+  --color-clickable: #f00;
+}
+
+.css-off svg,
+.css-off img {
+  height: 100px;
+  fill: #000;
+}
+
+html .css,
+body.css {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+  color: var(--color-front);
+  background: var(--color-back);
+  position: relative;
+}
+
+.css .clickable {
+  cursor: pointer;
+}
+
+.css h1,
+.css h2,
+.css h3,
+.css h4,
+.css h5,
+.css h6 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* layout */
+.css .full-height {
+  height: 100vh;
+}
+
+.css .container > * {
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+.css .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: none;
+}
+
+.css .headerheight {
+  height: 3rem;
+}
+
+.css .brand {
+  display: flex;
+  align-items: center
+}
+/*
+.css .double .half {
+  height: 50%;
+}
+*/
+/* cosmetic */
+
+.css .bg-mid {
+  background: var(--color-mid);
+}
+
+.css .bigtext {
+  font-size: 6em;
+}
+
+.css .leaning {
+  transform: rotate(-11deg);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+
+.css .brand .sitename {
+  font-size: 1rem;
+  text-shadow: 0 0 4px --color-back,
+    0 0 4px --color-back,
+    0 0 4px --color-back,
+    0 0 4px --color-back,
+    0 0 4px --color-back;
+}
+
+.css .brand .logo {
+  fill: #17FF66;
+  stroke: #000;
+  stroke: var(--color-front);
+}
+.css .brand .neon.logo {
+  fill: var(--color-front);
+  stroke: #0000;
+  -stroke: var(--color-back);
+  height: 2.6rem;
+}
+
+.css .img.floating {
+  height: 40vh;
+  /*
+  background-image: url('../public/img/photos/desk\ 2.png');
+  background-repeat: no-repeat;
+  background-position: 30% 40vh;
+  background-size: 40vh 40vh;
+  height: 50vh;
+  */
+}
+
+/* responsive */
+
+
+@media screen and (min-width: 550px) {
+  /* medium ----------------------------------------------------*/
+  .css .container > * {
+    max-width: 90%;
+  }
+
+  .css .double {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .css .double .half {
+    max-width: 50%;
+    flex: 1;
+  }
+
+  .css .headerheight {
+    height: 5rem;
+  }
+
+  .css .brand .logo {
+    height: 3rem;
+  }
+
+  .css .brand .sitename {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  /* large ----------------------------------------------------*/
+  .css .container > * {
+    max-width: 80%;
+  }
+}
+
+/* animations -------------------------------------------------*/
+
 @keyframes neon {
-    0% {
-      fill: #17FF66;
-    }
-    25% {
-      fill: #05f;
-    }
-    50% {
-      fill: #f0a;
-    }
-    75% {
-      fill: #fc0;
-    }
-    100% {
-      fill: #17ff66;
-    }
+  0% {
+    fill: #17FF66;
+  }
+  25% {
+    fill: #05f;
+  }
+  50% {
+    fill: #f0a;
+  }
+  75% {
+    fill: #fc0;
+  }
+  100% {
+    fill: #17ff66;
+  }
 }
 
 @keyframes shake {
@@ -34,29 +190,9 @@
   }
 }
 
-#gui3-logo {
-    fill: #17FF66;
-    stroke: black;
-    height: 5rem;
-    animation: 5s linear neon infinite;
-}
-
-#gui3-logo:hover {
-    fill: #f00 !important;
-    stroke: #222 !important;
-    animation: 0.2s shake 2;
-}
-
-.article {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-.article .section {
-    flex: 1;
-}
-
-.full-height {
-    height: 100vh;
+.css .brand:hover .neon.logo {
+  fill: var(--color-back);
+  animation: 5s linear neon infinite,
+    0.2s shake 2;
+  stroke: var(--color-front);
 }

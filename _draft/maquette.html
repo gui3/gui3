@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gui3 draft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="css">
+    <header class="container header headerheight">
+        <div class="brand">
+            <svg class="neon logo" 
+            -width="20" -height="26" 
+            viewBox="0 0 20 26" fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+                <path id="gui3-path" 
+                d="M10.5511 12.0127C18.9009 9.62977 12.8078 -1.23655 2.87841 5.43575C8.97146 -4.47738 26.2351 4.10129 15.6287 12.8706C28.3789 29.2654 -7.38948 28.5028 2.87842 13.8238L5.8121 14.777C2.20141 25.262 20.5934 18.4944 10.5511 12.0127Z" 
+                -fill="#17FF66" stroke="-black" stroke-width="1.2"/>
+            </svg>
+        <h2 class="sitename">Gui3's</h2>
+
+        </div>
+        <nav>
+            <input id="toggle-dark-mode" type="checkbox" checked
+            class="clickable"
+            onclick="javascript:toggleDarkMode(this)"/>
+            <label for="toggle-dark-mode" class="clickable">
+                mode:<span class="dark-mode status">light</span>
+            </label>
+
+            <input id="toggle-css" type="checkbox" checked
+            class="clickable"
+            onclick="javascript:toggleCss(this)">
+            <label for="toggle-css" class="clickable">
+                css:<span class="css status">on</span>
+            </label>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container">
+            <article class="full-height">
+                <section class="headerheight"></section>
+                <h2 class="bigtext">
+                    Un Développeur<br/>à votre service
+                </h2>
+                <img class="img floating"
+                src="../public/img/photos/desk 2.png" 
+                alt="photo d'un bureau">
+            </article>
+        </section>
+
+        <section class="container light">
+            <article class="full-height">
+                <h2 class="leaning">Vous avez besoin</h2>
+                <p class="">de mettre en place votre site web</p>
+                <p>de mettre en place votre site web</p>
+            </article>
+        </section>
+
+        <section class="container">
+            <article class="double full-height">
+                <section class="half masonry description">
+                    <h2 class="leaning">Masonry dynamique</h2>
+                    <p>
+                        Un bout de code javascript
+                        permet de charger des urls d'images
+                        et de les afficher dynamiquement
+                        et aléatoirement en gallerie "masonry".
+                        <a href="#">voir le code</a>
+                    </p>
+                </section>
+                <section class="half masonry target">
+
+                </section>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="scripts/AutoMasonry.js"></script>
+<script>
+// MASONRY -------
+const mas = new AutoMasonry(document, {
+    repeatBlocks: false,
+    shuffleBlocks: false
+})
+mas.placeIntoTarget(document.querySelector(".masonry.target"))
+/*
+for (let i = 0; i < 3; i++) {
+    mas.addImage(
+        "https://loremflickr.com/" + (100 * i) + "/360", 
+        "random placeholder image"
+    )
+}
+*/
+mas.fill()
+
+mas.interval = setInterval(
+    function() {
+        mas.reset()
+        /*
+        if (
+            mas.isFull()
+            || (
+                mas.displayedBlocks.length > 5
+                && Math.random() < 0.5
+            )
+        ) {
+            mas.removeBlock(mas.getRandomBlock())
+        } else if (Math.random() > 0.95) {
+            mas.reset()
+        } else {
+            mas.placeOneBlockRandom()
+        }
+        */
+    },
+    1200
+)
+
+function clear () {
+    clearInterval(mas.interval)
+}
+
+</script>
+
+<script>
+// buttons ----------------
+function toggleDarkMode (input) {
+    if (input.checked /*input.classList.contains("on")*/ ) {
+        document.documentElement
+        .style.setProperty('--color-back', '#fed')
+
+        document.documentElement
+        .style.setProperty('--color-front', '#543')
+
+        input.classList.remove("on")
+        input.parentNode.querySelector(".dark-mode.status").innerHTML = "light"
+    }
+    else {
+        document.documentElement
+        .style.setProperty('--color-back', '#543')
+
+        document.documentElement
+        .style.setProperty('--color-front', '#fed')
+
+        input.classList.add("on")
+        input.parentNode.querySelector(".dark-mode.status").innerHTML = "dark"
+    }
+}
+
+function toggleCss (input) {
+    if (input.checked/*input.classList.contains("on")*/) {
+        document.body.classList.add("css")
+        document.body.classList.remove("css-off")
+
+        input.classList.remove("on")
+        input.parentNode.querySelector(".css.status").innerHTML = "ON"
+    }
+    else {
+        document.body.classList.remove("css")
+        document.body.classList.add("css-off")
+
+        input.classList.add("on")
+        input.parentNode.querySelector(".css.status").innerHTML = "OFF"
+    }
+
+}
+</script>
+</html>

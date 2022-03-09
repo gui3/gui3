@@ -225,7 +225,6 @@ class AutoMasonry {
 
         // block
         let block
-        console.log(blockIndex)
         if (blockIndex < this.blocks.length) {
             console.log("yeah")
             block = this.blocks[blockIndex]
