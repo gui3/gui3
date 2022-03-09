@@ -5,83 +5,92 @@
   --color-clickable: #f00;
 }
 
-.css-off svg,
-.css-off img {
-  height: 100px;
-  fill: #000;
-}
-
-html .css,
-body.css {
+html,
+body{
   margin: 0;
   padding: 0;
   font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
   color: var(--color-front);
-  background: var(--color-back);
+  -background: var(--color-back);
   position: relative;
 }
 
-.css .clickable {
-  cursor: pointer;
+body {
+  background-color: linear-gradient(0, var(--color-back) 0%, var(--color-front) 100%);
+  opacity: 0.8;
+  background-image:
+    linear-gradient(30deg, #999999 12%, transparent 12.5%, transparent 87%, #999999 87.5%, #999999),
+    linear-gradient(150deg, #999999 12%, transparent 12.5%, transparent 87%, #999999 87.5%, #999999),
+    linear-gradient(30deg, #999999 12%, transparent 12.5%, transparent 87%, #999999 87.5%, #999999),
+    linear-gradient(150deg, #999999 12%, transparent 12.5%, transparent 87%, #999999 87.5%, #999999),
+    linear-gradient(60deg, #99999977 25%, transparent 25.5%, transparent 75%, #99999977 75%, #99999977),
+    linear-gradient(60deg, #99999977 25%, transparent 25.5%, transparent 75%, #99999977 75%, #99999977);
+  background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
 }
 
-.css h1,
-.css h2,
-.css h3,
-.css h4,
-.css h5,
-.css h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* layout */
-.css .full-height {
+.full-height {
   height: 100vh;
 }
 
-.css .container > * {
+.container > * {
   max-width: 275px;
   margin: 0 auto;
 }
 
-.css .header {
+.header {
   position: absolute;
   width: 100%;
   top: 0;
   background: none;
 }
 
-.css .headerheight {
+.headerheight {
   height: 3rem;
 }
 
-.css .brand {
+.brand {
   display: flex;
   align-items: center
 }
 /*
-.css .double .half {
+.double .half {
   height: 50%;
 }
 */
 /* cosmetic */
 
-.css .bg-mid {
+.bg-mid {
   background: var(--color-mid);
 }
 
-.css .bigtext {
+.bigtext {
   font-size: 6em;
 }
 
-.css .leaning {
+.leaning {
   transform: rotate(-11deg);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin: 0;
 }
 
-.css .brand .sitename {
+.brand .sitename {
   font-size: 1rem;
   text-shadow: 0 0 4px --color-back,
     0 0 4px --color-back,
@@ -90,19 +99,19 @@ body.css {
     0 0 4px --color-back;
 }
 
-.css .brand .logo {
+.brand .logo {
   fill: #17FF66;
   stroke: #000;
   stroke: var(--color-front);
 }
-.css .brand .neon.logo {
+.brand .neon.logo {
   fill: var(--color-front);
   stroke: #0000;
   -stroke: var(--color-back);
   height: 2.6rem;
 }
 
-.css .img.floating {
+.img.floating {
   height: 40vh;
   /*
   background-image: url('../public/img/photos/desk\ 2.png');
@@ -118,36 +127,36 @@ body.css {
 
 @media screen and (min-width: 550px) {
   /* medium ----------------------------------------------------*/
-  .css .container > * {
+  .container > * {
     max-width: 90%;
   }
 
-  .css .double {
+  .double {
     display: flex;
     align-items: stretch;
   }
 
-  .css .double .half {
+  .double .half {
     max-width: 50%;
     flex: 1;
   }
 
-  .css .headerheight {
+  .headerheight {
     height: 5rem;
   }
 
-  .css .brand .logo {
+  .brand .logo {
     height: 3rem;
   }
 
-  .css .brand .sitename {
+  .brand .sitename {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1050px) {
   /* large ----------------------------------------------------*/
-  .css .container > * {
+  .container > * {
     max-width: 80%;
   }
 }
@@ -190,7 +199,7 @@ body.css {
   }
 }
 
-.css .brand:hover .neon.logo {
+.brand:hover .neon.logo {
   fill: var(--color-back);
   animation: 5s linear neon infinite,
     0.2s shake 2;

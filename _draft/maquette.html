@@ -7,7 +7,7 @@
     <title>gui3 draft</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="css">
+<body>
     <header class="container header headerheight">
         <div class="brand">
             <svg class="neon logo" 
@@ -154,21 +154,18 @@ function toggleDarkMode (input) {
 }
 
 function toggleCss (input) {
-    if (input.checked/*input.classList.contains("on")*/) {
-        document.body.classList.add("css")
-        document.body.classList.remove("css-off")
-
-        input.classList.remove("on")
+    if (input.checked /*input.classList.contains("on")*/) {
         input.parentNode.querySelector(".css.status").innerHTML = "ON"
+
+        let cssLink = document.getElementsByTagName("link")[0]
+        cssLink.href = './style.css'
     }
     else {
-        document.body.classList.remove("css")
-        document.body.classList.add("css-off")
-
-        input.classList.add("on")
         input.parentNode.querySelector(".css.status").innerHTML = "OFF"
-    }
 
+        let cssLink = document.getElementsByTagName("link")[0]
+        cssLink.href = './style-without.css'
+    }
 }
 </script>
 </html>
