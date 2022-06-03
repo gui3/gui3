@@ -131,25 +131,35 @@ function clear () {
 <script>
 // buttons ----------------
 function toggleDarkMode (input) {
+    const style = getComputedStyle(document.body)
+
+    const dark = style.getPropertyValue('--const-dark')
+    const light = style.getPropertyValue('--const-light')
+    const mid = style.getPropertyValue('--const-mid')
+
     if (input.checked /*input.classList.contains("on")*/ ) {
+        // light mode
         document.documentElement
-        .style.setProperty('--color-back', '#fed')
+        .style.setProperty('--color-back', light)
 
         document.documentElement
-        .style.setProperty('--color-front', '#543')
+        .style.setProperty('--color-front', dark)
 
         input.classList.remove("on")
-        input.parentNode.querySelector(".dark-mode.status").innerHTML = "light"
+        input.parentNode.querySelector(".dark-mode.status")
+        .innerHTML = "light"
     }
     else {
+        // dark mode
         document.documentElement
-        .style.setProperty('--color-back', '#543')
+        .style.setProperty('--color-back', dark)
 
         document.documentElement
-        .style.setProperty('--color-front', '#fed')
+        .style.setProperty('--color-front', light)
 
         input.classList.add("on")
-        input.parentNode.querySelector(".dark-mode.status").innerHTML = "dark"
+        input.parentNode.querySelector(".dark-mode.status")
+        .innerHTML = "dark"
     }
 }
 

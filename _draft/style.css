@@ -1,8 +1,13 @@
 :root {
-  --color-front: #523;
-  --color-back: #fed;
-  --color-mid: #852;
-  --color-clickable: #f00;
+  --const-dark: #001;
+  --const-light: #eee;
+  --const-mid: #a99;
+  --const-active: #f07;
+
+  --color-front: var(--const-dark);
+  --color-back: var(--const-light);
+  --color-mid: var(--const-mid);
+  --color-clickable: var(--const-active);
 }
 
 html,
@@ -11,11 +16,11 @@ body{
   padding: 0;
   font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
   color: var(--color-front);
-  -background: var(--color-back);
+  background: var(--color-back);
   position: relative;
 }
 
-body {
+-body {
   background-color: linear-gradient(0, var(--color-back) 0%, var(--color-front) 100%);
   opacity: 0.8;
   background-image:
